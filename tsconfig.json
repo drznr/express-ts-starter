@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "composite": true,
+    "target": "es2016",
+    "module": "ES2020",
+    "outDir": "./dist",
+    "rootDir": ".",
+    "moduleResolution": "bundler",
+    "baseUrl": "./",
+    "types": ["node"],
+    "sourceMap": true,
+    "preserveSymlinks": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "strictBindCallApply": true,
+    "strictPropertyInitialization": true,
+    "strictBuiltinIteratorReturn": true,
+    "noImplicitThis": true,
+    "skipLibCheck": true
+  },
+  "include": ["**/*.ts"],
+  "exclude": ["node_modules", "dist/**/*"]
+}
