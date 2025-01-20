@@ -11,7 +11,7 @@ export default [
 
   {
     rules: {
-      'no-debugger': 'error'
-    }
-  }
+      'no-debugger': 'error',
+    },
+  },
 ];
