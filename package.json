@@ -8,7 +8,8 @@
     "build": "esbuild server.ts --bundle --format=esm --platform=node --target=node14 --outdir=dist --sourcemap --packages=external",
     "start": "node dist/server.js",
     "lint": "eslint .",
-    "format": "prettier . --write"
+    "format": "prettier . --write",
+    "prepare": "husky"
   },
   "author": "",
   "license": "ISC",
@@ -34,9 +35,15 @@
     "esbuild": "0.24.2",
     "eslint": "9.18.0",
     "globals": "15.14.0",
+    "husky": "9.1.7",
+    "lint-staged": "15.4.1",
     "prettier": "3.4.2",
     "tsx": "4.19.2",
     "typescript": "5.7.3",
     "typescript-eslint": "8.20.0"
+  },
+  "lint-staged": {
+    "*.{ts,js}": "npm run lint",
+    "*.{ts,json,js,md}": "npm run format"
   }
 }
